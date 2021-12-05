@@ -9,8 +9,6 @@
 
 # List of applications to kill
 APPS=(
-    sxhkd,
-    firefox,
     polybar
     )
 

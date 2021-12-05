@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Exec="/home/subin/conf/brightness.sh"
+StartupNotify=false
