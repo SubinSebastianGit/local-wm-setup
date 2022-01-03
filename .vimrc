@@ -6,7 +6,7 @@ set background=dark
 color atom-dark-256
 
 
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 let g:airline_extensions = ['branch']
 let g:airline_theme='badwolf'
 let g:airline#extensions#branch#enabled=1
@@ -30,4 +30,4 @@ function! BGToggleTransparency()
   endif
 endfunction
 
-nnoremap <C-x><C-t> :call BGToggleTransparency()<CR>  
+map <f1> :call BGToggleTransparency()<CR>  

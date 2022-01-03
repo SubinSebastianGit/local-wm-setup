@@ -4,7 +4,6 @@
 $HOME/.config/bspwm/clean.sh &
 
 pgrep -x sxhkd > /dev/null || sxhkd &
-
 # Fix Mouse cursor on startup 
 xsetroot -cursor_name left_ptr
 
@@ -18,8 +17,7 @@ bspc config window_gap           6
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-
-bspc config presel_feedback_color	      "#202020"
+bspc config presel_feedback_color	      "#B2AB8C"
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
@@ -31,6 +29,7 @@ bspc rule -a celluloid state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
+timedatectl >/dev/null
 polybar mainbar &
 pgrep -x picom > /dev/null || picom 2>/dev/null &
 pgrep -x lxpolkit > /dev/null || lxpolkit &

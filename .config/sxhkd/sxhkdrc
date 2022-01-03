@@ -17,6 +17,10 @@ super + shift +@space
 super + b
 	firefox
 
+# screenshot
+Print
+	flameshot gui
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -28,7 +32,7 @@ XF86MonBrightness{Up,Down}
 	brightnessctl s 10{+,-}
 
 XF86Audio{Raise,Lower}Volume
-	pulsemixer --change-volume {+,-}10
+	pulsemixer --change-volume {+,-}1
 
 XF86AudioMute
 	pulsemixer --toggle-mute

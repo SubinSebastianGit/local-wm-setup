@@ -239,8 +239,8 @@ type = internal/network
 interface = wlp2s0
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
-;format-connected = <ramp-signal>
+;format-connected = <ramp-signal> <label-connected>
+format-connected = <ramp-signal>
 format-connected-underline = #9f78e1
 label-connected =  %{A2:nm-connection-editor:}%essid%%{A}
 
@@ -362,11 +362,11 @@ format-charging-prefix = " "
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = #ffb52a
 
-format-discharging-prefix = " "
+format-discharging-prefix = " "
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = ""
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
@@ -382,9 +382,9 @@ animation-charging-2 = 
 animation-charging-foreground = ${colors.foreground}
 animation-charging-framerate = 1
 
-animation-discharging-0 =   
-animation-discharging-1 =   
-animation-discharging-2 =   
+animation-discharging-0 =   
+animation-discharging-1 =   
+animation-discharging-2 =   
 ;animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-foreground = ${colors.foreground}
 animation-discharging-framerate = 1
